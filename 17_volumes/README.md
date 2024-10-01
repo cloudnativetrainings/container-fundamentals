@@ -103,12 +103,13 @@ docker volume inspect <VOLUME-NAME>
 
 ```bash
 docker inspect docker-managed-volume | grep -A10 Mounts
+export VOLUME_DIR=$(docker inspect docker-managed-volume | jq -r '.[].Mounts[].Source')
 ```
 
 * Change the content of the file on the host
 
 ```bash
-sudo bash -c 'echo text from host >>  <HOST-VOLUME-PATH>/file.txt'
+echo text from host >>  ${VOLUME_DIR}/file.txt
 ```
 
 * Print the content of the file

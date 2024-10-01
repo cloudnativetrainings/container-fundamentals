@@ -1,6 +1,6 @@
 {
     "name": "Container Fundamentals Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:container-fundamentals-519e977",
+    "image": "quay.io/kubermatic-labs/devcontainers:container-fundamentals-47d9788",
     "customizations": {
       "vscode": {
         "settings": {
@@ -16,10 +16,7 @@
       }
     },
     "features": {
-      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-        "enableNonRootDocker": "true",
-        "moby": "true"
-      }
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "root",
     "privileged": true,
@@ -30,5 +27,12 @@
     "forwardPorts": [
       80,
       8080
+    ],
+    "mounts": [
+      {
+	"source": "dind-var-lib-docker",
+	"target": "/var/lib/docker",
+	"type": "volume"
+      }
     ]
 }

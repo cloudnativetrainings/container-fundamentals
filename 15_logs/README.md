@@ -40,6 +40,12 @@ You can costumize the log-driver in the file `/etc/docker/daemon.json` via these
 
 ## Run a container with a specific log-driver
 
+> First, make sure syslog-ng is running:
+>
+> ```bash
+> /etc/init.d/syslog-ng start
+> ```
+
 * Syslog log-driver
   The Syslog log driver will write all the container logs to the central syslog on the host. This log-driver is designed to be used when syslog is being collected and aggregated by an external system.
 
