@@ -1,0 +1,34 @@
+{
+    "name": "Container Fundamentals Training Labs",
+    "image": "quay.io/kubermatic-labs/devcontainers:container-fundamentals-519e977",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "workbench.editorAssociations": {
+            "*.md": "vscode.markdown.preview.editor"
+          },
+          "files.exclude": {
+            ".git/": true,
+            ".devcontainer/": true,
+            ".99_todos/": true
+          }
+        }
+      }
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+        "enableNonRootDocker": "true",
+        "moby": "true"
+      }
+    },
+    "remoteUser": "root",
+    "privileged": true,
+    "runArgs": [
+      "--network=host",
+      "--cgroupns=host"
+    ],
+    "forwardPorts": [
+      80,
+      8080
+    ]
+}
