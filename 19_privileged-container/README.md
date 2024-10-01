@@ -25,11 +25,3 @@ docker run -it --rm --privileged -v /:/host ubuntu:22.04 ls -alh /host
 ```
 
 >Note that you see the filesystem of the host.
-
-## Cleanup
-
-* Remove all the images
-
-  ```bash
-  docker rmi -f $(docker images -qa)
-  ```

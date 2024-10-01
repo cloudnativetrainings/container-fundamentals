@@ -26,7 +26,7 @@ docker build -t my-webserver:1.0.0 .
 ## Run a webserver container from the newly built image
 
 ```bash
-docker run -it -d -p 80:80 my-webserver:1.0.0
+docker run -it -d -p 80:80 --name my-webserver my-webserver:1.0.0
 ```
 
 Verify the output with curl command
@@ -39,8 +39,5 @@ curl localhost:80
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
+docker rm -f $(docker ps -q --filter "name=my-webserver")
 ```

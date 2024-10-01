@@ -147,9 +147,9 @@ docker restart my-nginx
 Start some containers
 
 ```bash
-docker run -d nginx:1.23.1
-docker run -d nginx:1.23.1
-docker run -d nginx:1.23.1
+docker run -d --name my-nginx-1 nginx:1.23.1
+docker run -d --name my-nginx-2 nginx:1.23.1
+docker run -d --name my-nginx-3 nginx:1.23.1
 ```
 
 List all running containers
@@ -158,12 +158,12 @@ List all running containers
 docker ps
 ```
 
->Note that the containers got some randomly generated names. You can either use these names or you can the first letters of the container id to define the container in the commands.
+>Note that when you do not provide `--name` parameter, the containers got some randomly generated names. You can either use these names or you can the first letters of the container id to define the container in the commands.
 
 ## Cleanup
 
 Remove all the containers
 
 ```bash
-docker rm -f $(docker ps -qa)
+docker rm -f $(docker ps -q  --filter "name=my-nginx")
 ```

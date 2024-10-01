@@ -2,10 +2,10 @@
 
 In this training, you will learn how to build your applications.
 
-Navigate to the folder `14_multistaged-builds` from CLI, before you get started.
+Navigate to the folder `12_multistaged-builds` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/14_multistaged-builds
+cd /workspaces/container-fundamentals/12_multistaged-builds
 ```
 
 ## Inspect the Dockerfile and the main.go file
@@ -19,7 +19,7 @@ cat main.go
 
 ```bash
 docker build -t go:1.0.0 . 
-docker run -it go:1.0.0
+docker run -it --name golang-v1 go:1.0.0
 ```
 
 ## Make use of multistaged builds
@@ -48,7 +48,7 @@ ENTRYPOINT [ "./main" ]
 
 ```bash
 docker build -t go:2.0.0 . 
-docker run -it go:2.0.0
+docker run -it --name golang-v2 go:2.0.0
 ```
 
 ## Compare the size of the images
@@ -61,8 +61,5 @@ docker image ls go
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
+docker rm -f $(docker ps -qa --filter "name=golang-v")
 ```

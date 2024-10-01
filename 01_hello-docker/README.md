@@ -4,9 +4,11 @@ In this training, you will start a Linux OS container and install a web server i
 
 ## Verify no web server is running on your VM
 
-Visit your VM on port 80 via http in your browser.
+Visit on port 80:
 
->You can get the external IP of your VM via the command `make get-external-ip` in your home directory.
+```bash
+curl http://localhost
+```
 
 ## Run an Ubuntu container
 

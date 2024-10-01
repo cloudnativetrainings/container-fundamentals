@@ -61,13 +61,3 @@ dive nginx:1.23.1
 ```
 
 > Note that you can navigate the layers in dive via arrow up and down keys. Via the tab key you can dig deeper in the specific layer. You can exit dive via CTRL+C.
-
-## Cleanup
-
-```bash
-# Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
-```

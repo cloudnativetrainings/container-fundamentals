@@ -71,7 +71,4 @@ Import the Dashboard with id `193`. Set the Datasource to the previously generat
 ```bash
 # Remove all the containers
 docker compose down
-
-# Remove all the images
-docker rmi -f $(docker images -qa)
 ```

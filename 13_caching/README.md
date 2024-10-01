@@ -92,8 +92,5 @@ docker run -it -d --rm --name my-webserver -p 80:80 webserver:2.0.0
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
+docker rm -f $(docker ps -q --filter "name=my-webserver")
 ```

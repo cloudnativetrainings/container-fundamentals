@@ -23,7 +23,7 @@ docker build -t ignore:1.0.0 .
 ## Run the image
 
 ```bash
-docker run -it ignore:1.0.0
+docker run -it --name ignore-v1 ignore:1.0.0
 ```
 
 >Take a look of the output of the container. All files are in the resulting container.
@@ -46,7 +46,7 @@ docker build -t ignore:2.0.0 .
 * Run the image
 
 ```bash
-docker run -it ignore:2.0.0
+docker run -it --name ignore-v2 ignore:2.0.0
 ```
 
 >Notice the output of the container, the files defined in the `.dockerignore` file are not included in the resulting image / container. Furthermore, this speeds up the build process as those files will not get sent to the docker engine.
@@ -55,8 +55,5 @@ docker run -it ignore:2.0.0
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
+docker rm -f $(docker ps -qa --filter "name=ignore")
 ```

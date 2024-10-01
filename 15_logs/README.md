@@ -69,8 +69,5 @@ docker inspect --format '{{ .HostConfig.LogConfig }}' redis
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa)
-
-#  Remove all the images
-docker rmi -f $(docker images -qa)
+docker rm -f $(docker ps -q --filter "name=redis")
 ```
