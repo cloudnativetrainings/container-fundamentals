@@ -109,7 +109,7 @@ export VOLUME_DIR=$(docker inspect docker-managed-volume | jq -r '.[].Mounts[].S
 * Change the content of the file on the host
 
 ```bash
-echo text from host >>  ${VOLUME_DIR}/file.txt
+echo text from host >> ${VOLUME_DIR}/file.txt
 ```
 
 * Print the content of the file
@@ -143,7 +143,7 @@ docker volume prune
 * Try to print the content of the file
 
 ```bash
-sudo cat <HOST-VOLUME-PATH>/file.txt
+cat ${VOLUME_DIR}/file.txt
 ```
 
 >Note that the file does not exist anymore.
@@ -196,5 +196,8 @@ cat data/file.txt
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -q --filter "name=volume")
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
 ```

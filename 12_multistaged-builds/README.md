@@ -19,7 +19,7 @@ cat main.go
 
 ```bash
 docker build -t go:1.0.0 . 
-docker run -it --name golang-v1 go:1.0.0
+docker run -it go:1.0.0
 ```
 
 ## Make use of multistaged builds
@@ -48,7 +48,7 @@ ENTRYPOINT [ "./main" ]
 
 ```bash
 docker build -t go:2.0.0 . 
-docker run -it --name golang-v2 go:2.0.0
+docker run -it go:2.0.0
 ```
 
 ## Compare the size of the images
@@ -61,5 +61,8 @@ docker image ls go
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa --filter "name=golang-v")
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
 ```

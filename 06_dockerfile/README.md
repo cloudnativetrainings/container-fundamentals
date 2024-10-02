@@ -32,7 +32,7 @@ docker images
 ## Run a container from the image
 
 ```bash
-docker run -it --name my-image my-image:1.0.0
+docker run -it my-image:1.0.0
 ```
 
 >Type Ctrl+c to exit from container.
@@ -41,5 +41,8 @@ docker run -it --name my-image my-image:1.0.0
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa --filter "name=my-image")
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
 ```

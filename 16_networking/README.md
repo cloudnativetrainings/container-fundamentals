@@ -86,15 +86,13 @@ docker run -it --rm --net my-network curlimages/curl:7.72.0 my-nginx
 
 ## Cleanup
 
-* Remove all the containers
-
 ```bash
-docker rm -f $(docker ps -q --filter "name=network")
-docker rm -f $(docker ps -q --filter "name=webserver")
-```
+# Remove all the containers
+docker rm -f $(docker ps -qa)
 
-* Remove the custom network
+# Remove all the images
+docker rmi -f $(docker images -qa)
 
-```bash
+# Remove the custom network
 docker network rm my-network
 ```

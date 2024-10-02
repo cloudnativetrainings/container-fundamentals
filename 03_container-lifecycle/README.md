@@ -162,8 +162,10 @@ docker ps
 
 ## Cleanup
 
-Remove all the containers
-
 ```bash
-docker rm -f $(docker ps -q  --filter "name=my-nginx")
+# Remove all the containers
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
 ```

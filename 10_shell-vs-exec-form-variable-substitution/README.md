@@ -25,7 +25,7 @@ docker build -t shell-vs-exec-form-vars:1.0.0 .
 ## Run a container from the image
 
 ```bash
-docker run -it --name form-v1 shell-vs-exec-form-vars:1.0.0
+docker run -it shell-vs-exec-form-vars:1.0.0
 ```
 
 >Note that variable substitution for the environment variable $FOO did not happen.
@@ -47,7 +47,7 @@ docker build -t shell-vs-exec-form-vars:2.0.0 .
 ## Run a container from the new image
 
 ```bash
-docker run -it --name form-v2 shell-vs-exec-form-vars:2.0.0
+docker run -it shell-vs-exec-form-vars:2.0.0
 ```
 
 >Note that variable substitution happened this time.
@@ -56,5 +56,8 @@ docker run -it --name form-v2 shell-vs-exec-form-vars:2.0.0
 
 ```bash
 # Remove all the containers
-docker rm -f $(docker ps -qa --filter "name=form-v")
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
 ```
