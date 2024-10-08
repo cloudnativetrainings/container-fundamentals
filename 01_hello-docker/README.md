@@ -32,6 +32,8 @@ apt update && apt install -y nginx
 
 Now you should see the welcome page of nginx.
 
+> TODO how to open the browser?
+
 ## Exit the container
 
 ```bash

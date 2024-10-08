@@ -33,6 +33,8 @@ ENTRYPOINT [ "echo" ]
 CMD [ "hello docker" ]
 ```
 
+> TODO missing .soloution files
+
 * Build and run the image
 
 ```bash
@@ -55,3 +57,5 @@ docker run -it --rm --name entrypoint-vs-cmd entrypoint-vs-cmd:2.0.0 bonjour doc
 ```bash
 docker run -it --rm --name entrypoint-vs-cmd --entrypoint sleep entrypoint-vs-cmd:2.0.0 5
 ```
+
+> TODO missing exit command 

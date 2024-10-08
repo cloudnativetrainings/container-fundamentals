@@ -38,6 +38,8 @@ You can costumize the log-driver in the file `/etc/docker/daemon.json` via these
 
 >This sets the log-driver to `json-file` which is the default. Furthermore, you can define log file rotation by setting the log-opts properties `max-size` and `max-file` .
 
+> TODO not sure if that works... the logs did not show any diff. probably the docker service has to be restarted on the host afterwards
+
 ## Run a container with a specific log-driver
 
 > First, make sure syslog-ng is running:

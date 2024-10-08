@@ -30,6 +30,8 @@ docker run -it --name my-busybox busybox:1.32.0 sh -c "while true; do $(echo dat
 
 * To detach from the container, press Ctrl+p followed by Ctrl+q. Verify the status of the container.
 
+> TODO does not work on my mac, I am not sure if we can fix this
+
 ```bash
 docker ps -a
 ```
@@ -41,6 +43,8 @@ docker ps -a
 ```bash
 docker attach my-busybox
 ```
+
+> TODO docker cli completion seems not to be enabled 
 
 * To stop it, press Ctrl+c. Verify the status of the container.
 
@@ -77,6 +81,8 @@ docker run -it -d --name my-busybox busybox:1.32.0 sh -c "while true; do $(echo 
 ```bash
 docker attach my-busybox
 ```
+
+> TODO missing how to exit from container
 
 * Cleanup
 

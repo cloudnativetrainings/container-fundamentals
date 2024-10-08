@@ -44,6 +44,8 @@ COPY --from=builder /build/main .
 ENTRYPOINT [ "./main" ]
 ```
 
+> TODO missing .soloution files
+
 ## Rebuild and run the application
 
 ```bash
