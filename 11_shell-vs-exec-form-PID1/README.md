@@ -36,6 +36,8 @@ docker run -it shell-vs-exec-form-pid1:1.0.0
 ENTRYPOINT ps aux
 ```
 
+> TODO missing .soloution files
+
 > This is shell form of `ENTRYPOINT`
 
 ## Rebuild the image

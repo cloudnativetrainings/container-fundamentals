@@ -70,6 +70,8 @@ ENTRYPOINT [ "npm" ]
 CMD [ "start" ]
 ```
 
+> TODO missing .soloution files
+
 * Do the initial build
 
 ```bash

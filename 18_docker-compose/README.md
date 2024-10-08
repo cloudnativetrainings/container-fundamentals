@@ -58,6 +58,8 @@ curl localhost:8080/metrics
 
 >You can get the external IP via the command `make get-external-ip` in your home directory.
 
+> TODO missing make file - is this still needed at all?
+
 ## Create a Datasource
 
 Create a Datasource of type `Prometheus` and the URL `http://prometheus:9090`

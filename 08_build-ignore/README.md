@@ -37,6 +37,8 @@ passwords.txt
 some-large-image.jpg
 ```
 
+> TODO missing .soloution files
+
 * Build the image
 
 ```bash

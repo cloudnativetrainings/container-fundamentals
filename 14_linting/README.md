@@ -39,3 +39,5 @@ Dockerfile:7 DL3025 warning: Use arguments JSON notation for CMD and ENTRYPOINT 
 ```
 
 Fix all warning messages and try to fix some info messages in the Dockerfile and run hadolint for verification of your work.
+
+> TODO missing .soloution files

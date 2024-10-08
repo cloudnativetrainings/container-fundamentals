@@ -36,6 +36,8 @@ docker run -it shell-vs-exec-form-vars:1.0.0
 ENTRYPOINT /bin/echo $FOO
 ```
 
+> TODO missing .soloution files
+
 > This is shell form of `ENTRYPOINT`
 
 ## Rebuild the image
