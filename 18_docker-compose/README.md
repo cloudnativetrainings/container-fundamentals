@@ -56,7 +56,11 @@ curl localhost:8080/metrics
 
 * Visit Grafana in your Browser (User admin, Password admin) on port 80 via http.
 
->You can get the external IP via the command `make get-external-ip` in your home directory.
+>You can get the URL of your Codespaces instance via below command:
+
+```bash
+echo "https://${CODESPACE_NAME}-80.app.github.dev/"
+```
 
 ## Create a Datasource
 

@@ -24,7 +24,9 @@ docker logs -f redis
 
 ## Globally customize the log-driver
 
-You can costumize the log-driver in the file `/etc/docker/daemon.json` via these options:
+>**IMPORTANT**: Be aware that below configuration will not work on the codespaces lab environment
+
+If you want to update log-driver setting for all containers in the system, you can costumize the log-driver in the file `/etc/docker/daemon.json` via these options:
 
 ```json
 {

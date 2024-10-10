@@ -23,12 +23,17 @@ docker inspect my-nginx | jq '.[].State'
 * Start a container which prints the current date every second on the console
 
 ```bash
-docker run -it --name my-busybox busybox:1.32.0 sh -c "while true; do $(echo date); sleep 1; done"
+docker run -it --detach-keys="ctrl-p,ctrl-d" --name my-busybox \
+  busybox:1.32.0 sh -c "while true; do $(echo date); sleep 1; done"
 ```
 
 >Note that you have to start the container with the flags `--interactive` or `-i` and `--tty` or `-t`  i.e. together `-it`.
 
-* To detach from the container, press Ctrl+p followed by Ctrl+q. Verify the status of the container.
+* To detach from the container, press `Ctrl+p` followed by `Ctrl+d`. Verify the status of the container.
+
+> Default sequence is `Ctrl+p` `Ctrl+q`
+>
+> More info can be found on [docker documentation](https://docs.docker.com/reference/cli/docker/container/attach/)
 
 ```bash
 docker ps -a
@@ -42,7 +47,7 @@ docker ps -a
 docker attach my-busybox
 ```
 
-* To stop it, press Ctrl+c. Verify the status of the container.
+* To stop it, press `Ctrl+c`. Verify the status of the container.
 
 ```bash
 docker ps -a
@@ -77,6 +82,8 @@ docker run -it -d --name my-busybox busybox:1.32.0 sh -c "while true; do $(echo 
 ```bash
 docker attach my-busybox
 ```
+
+* Exit via pressing `Ctrl+c`.
 
 * Cleanup
 

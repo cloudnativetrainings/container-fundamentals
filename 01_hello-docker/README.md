@@ -10,6 +10,12 @@ Visit on port 80:
 curl http://localhost
 ```
 
+If you want to reach it via browser, you can get the URL of your Codespaces instance via below command:
+
+```bash
+echo "https://${CODESPACE_NAME}-80.app.github.dev/"
+```
+
 ## Run an Ubuntu container
 
 ```bash
