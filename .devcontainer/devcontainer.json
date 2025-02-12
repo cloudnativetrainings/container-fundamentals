@@ -1,38 +1,38 @@
 {
-    "name": "Container Fundamentals Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:container-fundamentals-47d9788",
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "workbench.editorAssociations": {
-            "*.md": "vscode.markdown.preview.editor"
-          },
-          "files.exclude": {
-            ".git/": true,
-            ".devcontainer/": true,
-            ".99_todos/": true
-          }
+  "name": "Container Fundamentals Training Labs",
+  "image": "quay.io/kubermatic-labs/trainings/container-fundamentals:1.0.0",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor"
+        },
+        "files.exclude": {
+          ".git/": true,
+          ".devcontainer/": true,
+          ".99_todos/": true
         }
       }
-    },
-    "features": {
-      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
-    "remoteUser": "root",
-    "privileged": true,
-    "runArgs": [
-      "--network=host",
-      "--cgroupns=host"
-    ],
-    "forwardPorts": [
-      80,
-      8080
-    ],
-    "mounts": [
-      {
-	"source": "dind-var-lib-docker",
-	"target": "/var/lib/docker",
-	"type": "volume"
-      }
-    ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "remoteUser": "root",
+  "privileged": true,
+  "runArgs": [
+    "--network=host",
+    "--cgroupns=host"
+  ],
+  "forwardPorts": [
+    80,
+    8080
+  ],
+  "mounts": [
+    {
+      "source": "dind-var-lib-docker",
+      "target": "/var/lib/docker",
+      "type": "volume"
+    }
+  ]
 }
