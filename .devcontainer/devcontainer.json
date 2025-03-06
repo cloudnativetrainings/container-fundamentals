@@ -1,6 +1,6 @@
 {
   "name": "Container Fundamentals Training Labs",
-  "image": "quay.io/kubermatic-labs/training-ghcs-container-fundamentals-trainee-environment:1.0.0",
+  "image": "quay.io/kubermatic-labs/training-ghcs-container-fundamentals-trainee-environment:1.0.1",
   "customizations": {
     "vscode": {
       "settings": {
