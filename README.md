@@ -1,7 +1,11 @@
 # Container Fundamentals
 
-## Setup training environment
+## Setup the training environment
 
-This repository is designed to work with GitHub Codespaces (hence devcontaners).
+1. Open [Github Codespaces](https://github.com/codespaces) and create your new `cloudnativetrainings/container-fundamentals` codespace.
+2. Verify your environment via `make verify`.
+3. Start with the [01_hello-docker](./01_hello-docker/README.mdd) lab.
 
-Start the codespaces on the repo, wait until the setup is ready, and start with the [01_hello-docker](./01_hello-docker/README.mdd) lab.
+## Teardown the training environment
+
+1. Delete your `cloudnativetrainings/container-fundamentals` codespace via [Github Codespaces](https://github.com/codespaces).
