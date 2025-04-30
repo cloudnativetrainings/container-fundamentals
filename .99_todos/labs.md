@@ -5,3 +5,5 @@
 # new lab: creating a base image from scratch => golden image
 
 # move podman lab after hadolint
+
+# new lab => verify images via cosign

@@ -1,6 +1,6 @@
 {
   "name": "Container Fundamentals Training Labs",
-  "image": "quay.io/kubermatic-labs/training-ghcs-container-fundamentals-trainee-environment:1.0.1",
+  "image": "quay.io/kubermatic-labs/training-ghcs-container-fundamentals-trainee-environment:1.0.3",
   "customizations": {
     "vscode": {
       "settings": {
@@ -9,8 +9,10 @@
         },
         "files.exclude": {
           ".git/": true,
+          ".gitignore": true,
           ".devcontainer/": true,
-          ".99_todos/": true
+          ".99_todos/": true,
+          "makefile": true
         }
       }
     }
