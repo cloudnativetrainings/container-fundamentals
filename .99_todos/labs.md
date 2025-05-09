@@ -7,3 +7,7 @@
 # move podman lab after hadolint
 
 # new lab => verify images via cosign
+
+# new lab => image from scratch without Dir and Dockerfile
+
+# ARG vs ENV -> passing params into docker build
