@@ -22,12 +22,12 @@ docker build -t webserver:1.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:1.0.0
 ```
 
->Visit the site via the external IP of your VM on port 80 via http
+> Visit the site via the external IP of your VM on port 80 via http
 
 ### Remove the container
 
 ```bash
-docker rm -f my-webserver 
+docker rm -f my-webserver
 ```
 
 ## Re-build the docker image
@@ -36,7 +36,7 @@ docker rm -f my-webserver
 docker build -t webserver:1.0.0 .
 ```
 
->Note that all layers are taken from the cache.
+> Note that all layers are taken from the cache.
 
 ## Adapt the application and re-build the docker image
 
@@ -47,18 +47,18 @@ docker build -t webserver:1.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:1.0.0
 ```
 
->Visit the site via the external IP of your VM on port 80 via http
->Note that all layers starting from the `RUN npm install` layer are not taken from the cache. On bigger projects, this can increase your build times significantly.
+> Visit the site via the external IP of your VM on port 80 via http
+> Note that all layers starting from the `RUN npm install` layer are not taken from the cache. On bigger projects, this can increase your build times significantly.
 
 ### Remove the container
 
 ```bash
-docker rm -f my-webserver 
+docker rm -f my-webserver
 ```
 
 ## Fix the Dockerfile
 
-* Change the content of the Dockerfile to this
+- Change the content of the Dockerfile to this
 
 ```docker
 FROM node:12
@@ -70,13 +70,13 @@ ENTRYPOINT [ "npm" ]
 CMD [ "start" ]
 ```
 
-* Do the initial build
+- Do the initial build
 
 ```bash
 docker build -t webserver:2.0.0 .
 ```
 
-* Re-build the docker image
+- Re-build the docker image
 
 Change the message to something different in the file `server.js`.
 
@@ -85,8 +85,8 @@ docker build -t webserver:2.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:2.0.0
 ```
 
->Visit the site via the external IP of your VM on port 80 via http
->Note the layers which are taken from the cache.
+> Visit the site via the external IP of your VM on port 80 via http
+> Note the layers which are taken from the cache.
 
 ## Cleanup
 

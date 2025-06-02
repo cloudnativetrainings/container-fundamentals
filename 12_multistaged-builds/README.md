@@ -18,7 +18,7 @@ cat main.go
 ## Build and run the application
 
 ```bash
-docker build -t go:1.0.0 . 
+docker build -t go:1.0.0 .
 docker run -it go:1.0.0
 ```
 
@@ -30,7 +30,7 @@ Adapt the Dockerfile to the following
 
 ```docker
 # builder image
-FROM golang:1.19.1-alpine3.16 as builder
+FROM golang:1.19.1-alpine3.16 AS builder
 RUN mkdir /build
 ADD main.go /build/
 WORKDIR /build
@@ -47,7 +47,7 @@ ENTRYPOINT [ "./main" ]
 ## Rebuild and run the application
 
 ```bash
-docker build -t go:2.0.0 . 
+docker build -t go:2.0.0 .
 docker run -it go:2.0.0
 ```
 

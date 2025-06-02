@@ -6,41 +6,41 @@ Each Docker image references a list of read-only layers that represent filesyste
 
 Layers are stacked on top of each other to form a base for a container's root filesystem.
 
-* Pull `debian` image to your local system.
+- Pull `debian` image to your local system.
 
 ```bash
 docker pull debian:10.5
 ```
 
-* Show image history
+- Show image history
 
 ```bash
 docker history debian:10.5
 ```
 
->shows you list of layers that `debian` image contains.
+> shows you list of layers that `debian` image contains.
 
 ## Inspect the layers via docker inspect
 
-* More Information about an image you can find out with `inspect`:
+- More Information about an image you can find out with `inspect`:
 
 ```bash
 docker inspect debian:10.5
 ```
 
-* There you will also see how the image is build and e.g. which command will executed at the container startup.
+- There you will also see how the image is build and e.g. which command will executed at the container startup.
 
 ```bash
 docker inspect debian:10.5 | grep Cmd --after-context=10
 ```
 
-  Or what user
+Or what user
 
 ```bash
 docker inspect debian:10.5 | grep User --before-context=5
 ```
 
-  What is the SHA of the image.
+What is the SHA of the image.
 
 ```bash
 docker inspect debian:10.5 | grep Id

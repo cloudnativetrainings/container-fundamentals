@@ -20,8 +20,8 @@ cat Dockerfile
 docker build -t my-image:1.0.0  .
 ```
 
->The instruction `-t my-image:1.0.0` defines the name and the version of the resulting image.
->The instrucition `.` tells the build process the location of the build context.
+> The instruction `-t my-image:1.0.0` defines the name and the version of the resulting image.
+> The instrucition `.` tells the build process the location of the build context.
 
 ## View the newly built images
 
@@ -35,7 +35,7 @@ docker images
 docker run -it my-image:1.0.0
 ```
 
->Type Ctrl+c to exit from container.
+> Type Ctrl+c to exit from container.
 
 ## Cleanup
 

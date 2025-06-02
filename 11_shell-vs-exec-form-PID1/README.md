@@ -28,7 +28,7 @@ docker build -t shell-vs-exec-form-pid1:1.0.0 .
 docker run -it shell-vs-exec-form-pid1:1.0.0
 ```
 
->Note that the process `ps aux` within the container is PID 1.
+> Note that the process `ps aux` within the container is PID 1.
 
 ## Change the entrypoint to the following in the Dockerfile
 
@@ -50,7 +50,7 @@ docker build -t shell-vs-exec-form-pid1:2.0.0 .
 docker run -it shell-vs-exec-form-pid1:2.0.0
 ```
 
->Note that the process `ps aux` within the container is not PID 1. Hence, the started process will not receive lifecycle signals like SIGTERM or SIGKILL. This can lead to data loss of your application since  the container will not exit cleanly.
+> Note that the process `ps aux` within the container is not PID 1. Hence, the started process will not receive lifecycle signals like SIGTERM or SIGKILL. This can lead to data loss of your application since the container will not exit cleanly.
 
 ## Cleanup
 

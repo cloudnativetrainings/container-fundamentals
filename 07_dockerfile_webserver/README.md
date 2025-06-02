@@ -20,8 +20,8 @@ cat Dockerfile
 docker build -t my-webserver:1.0.0 .
 ```
 
->The instruction `-t my-webserver:1.0.0` defines the name and the version of the resulting image.
->The instrucition `.` tells the build process the location of the build context.
+> The instruction `-t my-webserver:1.0.0` defines the name and the version of the resulting image.
+> The instrucition `.` tells the build process the location of the build context.
 
 ## Run a webserver container from the newly built image
 

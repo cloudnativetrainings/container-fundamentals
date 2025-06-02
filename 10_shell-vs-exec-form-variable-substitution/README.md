@@ -28,7 +28,7 @@ docker build -t shell-vs-exec-form-vars:1.0.0 .
 docker run -it shell-vs-exec-form-vars:1.0.0
 ```
 
->Note that variable substitution for the environment variable $FOO did not happen.
+> Note that variable substitution for the environment variable $FOO did not happen.
 
 ## Change the entrypoint to the following in the Dockerfile
 
@@ -50,7 +50,7 @@ docker build -t shell-vs-exec-form-vars:2.0.0 .
 docker run -it shell-vs-exec-form-vars:2.0.0
 ```
 
->Note that variable substitution happened this time.
+> Note that variable substitution happened this time.
 
 ## Cleanup
 
