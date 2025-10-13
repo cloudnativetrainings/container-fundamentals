@@ -7,4 +7,6 @@ verify:
 	dive --version
 	hadolint --version
 	docker compose version
+	docker info
+# 	curl --unix-socket /var/run/docker.sock http://localhost/version
 	echo "Training Environment successfully verified"
