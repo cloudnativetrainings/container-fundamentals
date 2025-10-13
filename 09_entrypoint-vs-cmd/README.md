@@ -5,7 +5,7 @@ In this training, you will learn the differences between ENTRYPOINT and CMD.
 Navigate to the folder `09_entrypoint-vs-cmd` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/09_entrypoint-vs-cmd
+cd /training/09_entrypoint-vs-cmd
 ```
 
 ## Inspect the Dockerfile

@@ -5,7 +5,7 @@ In this training, we will create an image with an customized webserver.
 Navigate to the folder `07_dockerfile_webserver` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/07_dockerfile_webserver
+cd /training/07_dockerfile_webserver
 ```
 
 ## Inspect the Dockerfile

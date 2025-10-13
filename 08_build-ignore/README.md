@@ -5,7 +5,7 @@ In this training, you will learn how to exclude files from the resulting image.
 Navigate to the folder `08_build-ignore` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/08_build-ignore
+cd /training/08_build-ignore
 ```
 
 ## Inspect the Dockerfile

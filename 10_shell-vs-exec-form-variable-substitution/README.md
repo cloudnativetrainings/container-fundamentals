@@ -5,7 +5,7 @@ In this training, you will learn the difference between exec and shell form conc
 Navigate to the folder `10_shell-vs-exec-form-variable-substitution` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/10_shell-vs-exec-form-variable-substitution
+cd /training/10_shell-vs-exec-form-variable-substitution
 ```
 
 ## Inspect the Dockerfile

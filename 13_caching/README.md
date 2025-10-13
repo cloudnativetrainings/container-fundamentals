@@ -5,7 +5,7 @@ In this training, you will learn how to write Dockerfiles which will decrease bu
 Navigate to the folder `13_caching` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/13_caching
+cd /training/13_caching
 ```
 
 ## Inspect the Dockerfile and the server.js file

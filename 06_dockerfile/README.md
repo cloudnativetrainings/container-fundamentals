@@ -5,7 +5,7 @@ In this training, you will create your own image and run it afterwards.
 Navigate to the folder `06_dockerfile` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/06_dockerfile
+cd /training/06_dockerfile
 ```
 
 ## Inspect the Dockerfile

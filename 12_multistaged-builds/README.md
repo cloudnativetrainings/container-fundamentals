@@ -5,7 +5,7 @@ In this training, you will learn how to build your applications.
 Navigate to the folder `12_multistaged-builds` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/12_multistaged-builds
+cd /training/12_multistaged-builds
 ```
 
 ## Inspect the Dockerfile and the main.go file

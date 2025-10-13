@@ -1,6 +1,8 @@
 {
   "name": "Container Fundamentals Training Labs",
   "image": "quay.io/kubermatic-labs/training-ghcs-container-fundamentals-trainee-environment:1.0.4",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/training/,type=bind",
+  "workspaceFolder": "/training/",
   "customizations": {
     "vscode": {
       "settings": {

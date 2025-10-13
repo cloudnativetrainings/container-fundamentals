@@ -5,7 +5,7 @@ In this training, you will learn the difference between exec and shell form conc
 Navigate to the folder `11_shell-vs-exec-form-PID1` from CLI, before you get started.
 
 ```bash
-cd /workspaces/container-fundamentals/11_shell-vs-exec-form-PID1
+cd /training/11_shell-vs-exec-form-PID1
 ```
 
 ## Inspect the Dockerfile
