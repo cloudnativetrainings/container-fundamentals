@@ -29,3 +29,7 @@ debug docker build
 ENTRYPOINT [ "/bin/echo" ] => EXEC form, app gets pid1
 CMD $FOO => SHELL form, $FOO gets substituted
 ```
+
+# add manual sigterm signal
+
+kill -s SIGTERM 34649 => for training-application
