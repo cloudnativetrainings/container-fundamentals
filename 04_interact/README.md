@@ -13,7 +13,8 @@ docker run -it --rm -d --name my-busybox busybox:1.32.0 sh -c "while true; do $(
 # attach to the process inside the container
 docker attach my-busybox
 
-# exit the container via CTRL+C. Note the container got stopped and removed afterwards.
+# exit the container via CTRL+C. Note the container got stopped and removed afterwards (due to the --rm flag on starting the container)
+docker ps -a
 ```
 
 ## Spawn a new process in the container and attach to it
@@ -30,6 +31,9 @@ ps aux
 
 # exit the container
 exit
+
+# note that the container is still running
+docker ps
 ```
 
 ## Cleanup

@@ -39,25 +39,20 @@ docker run -d --name my-nginx nginx:1.23.1
 - Try to remove the local image which was downloaded before.
 
 ```bash
+# remove the image
+# note that this will not work due to an instance of the image (so, a container) is currently running
+docker rmi nginx:1.23.1
+
+# remove the container
+# note this will not work due to safety mechanisms of docker, you have to stop the running container first 
+docker rm my-nginx
+
+# stop the container
+docker stop my-nginx
+
+# remove the container
+docker rm my-nginx
+
+# finally, remove the image
 docker rmi nginx:1.23.1
 ```
-
-> This will not work out due to the image is currently in use. You will get Error Message on console, similar to this - 'Error response from daemon: conflict: unable to remove repository reference "nginx:1.23.1" (must force) - container xxxxxxxx is using its referenced image xxxxxxxx'
-
-- Remove all running containers
-
-```bash
-docker rm -f $(docker ps -q --filter "name=my-nginx")
-```
-
-> - `-f` option will stop and then remove the running container.
-> - The inline command `docker ps -q --filter "name=my-nginx"` returns the container id the container named `my-nginx`.
->   You can use `$(docker ps -qa)` to get the container id of all running containers.
-
-- Try again to remove the image
-
-```bash
-docker rmi nginx:1.23.1
-```
-
-> At this time, the docker image will be removed as there is no running container associated to this image.

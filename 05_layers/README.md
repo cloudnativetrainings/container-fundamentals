@@ -20,7 +20,7 @@ docker history debian:10.5
 
 > shows you list of layers that `debian` image contains.
 
-## Inspect the layers via docker inspect
+## Inspect an image via docker inspect
 
 - More Information about an image you can find out with `inspect`:
 
