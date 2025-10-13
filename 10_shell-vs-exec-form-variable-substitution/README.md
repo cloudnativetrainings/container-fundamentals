@@ -30,7 +30,7 @@ docker run -it shell-vs-exec-form-vars:1.0.0
 
 > Note that variable substitution for the environment variable $FOO did not happen.
 
-## Change the entrypoint to the following in the Dockerfile
+## Change the entrypoint to the Shell Form in the Dockerfile
 
 ```docker
 ENTRYPOINT /bin/echo $FOO
@@ -51,6 +51,22 @@ docker run -it shell-vs-exec-form-vars:2.0.0
 ```
 
 > Note that variable substitution happened this time.
+
+## How to have variable substitution via Exec Form
+
+In the next lab you will learn about the big problem with the Shell form. So we have to find a way to get variable substitution via Exec Form.
+
+```docker
+ENTRYPOINT ["/bin/sh", "-c", "echo $FOO"]
+```
+
+```bash
+# build the image again and run a container 
+docker build -t shell-vs-exec-form-vars:3.0.0 .
+docker run -it shell-vs-exec-form-vars:3.0.0
+```
+
+> Note that variable substitution happened this time via Exec Form.
 
 ## Cleanup
 

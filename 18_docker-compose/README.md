@@ -23,7 +23,7 @@ docker compose version
 > This container will be monitored afterwards via the Prometheus stack.
 
 ```bash
-docker run -d --name my-nginx -p 80:80 nginx:1.23.1
+docker run -d --name my-nginx -p 8081:80 nginx:1.23.1
 ```
 
 ## Inspect the file `prometheus.yaml`
@@ -81,6 +81,9 @@ Import the Dashboard with id `193`. Set the Datasource to the previously generat
 ## Cleanup
 
 ```bash
-# Remove all the containers
+# Remove all the containers created by docker-compose
 docker compose down
+
+# remove nginx container
+docker rm -f my-nginx 
 ```

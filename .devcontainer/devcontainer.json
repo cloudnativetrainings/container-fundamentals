@@ -21,7 +21,10 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-        "moby": false
+      // workaround for https://github.com/devcontainers/features/issues/1494
+      // which does not work all the time
+      // should be removed once fixed
+      "moby": false
     }
   },
   "remoteUser": "root",
