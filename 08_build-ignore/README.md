@@ -33,6 +33,7 @@ docker run -it ignore:1.0.0
 - Create a file named `.dockerignore` with the following content
 
 ```txt
+.dockerignore
 passwords.txt
 some-large-image.jpg
 README.md

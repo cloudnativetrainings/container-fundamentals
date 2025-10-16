@@ -26,8 +26,13 @@ https://docs.google.com/presentation/d/1NoTZFbm0R59J_vnun3M4l4N30lxtkqHsO4nGlduM
 
 redundant info and order is broken
 
-# make use of ENTRYPOINT consistantly !!!
+# make use of ENTRYPOINT consistantly
 
 multistaged slides
 
 https://docs.google.com/presentation/d/1NoTZFbm0R59J_vnun3M4l4N30lxtkqHsO4nGlduMs2c/edit?slide=id.ga0187a22eb_0_277#slide=id.ga0187a22eb_0_277
+
+# question during training - where are the images placed on the host?
+
+/var/lib/docker/overlay2
+docker system info
