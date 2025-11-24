@@ -94,7 +94,7 @@ docker ps
 
 ```bash
 docker run -it --detach-keys="ctrl-p,ctrl-d" --name my-busybox \
-  busybox:1.32.0 sh -c "while true; do $(echo date); sleep 1; done"
+  busybox:1.32.0 sh -c "while true; do date; sleep 1; done"
 ```
 
 > Note that you have to start the container with the flags `--interactive` or `-i` and `--tty` or `-t` i.e. together `-it`.
@@ -142,7 +142,7 @@ docker rm -f my-busybox
 - Start a container which prints the current date every second on the console
 
 ```bash
-docker run -it -d --name my-busybox busybox:1.32.0 sh -c "while true; do $(echo date); sleep 1; done"
+docker run -it -d --name my-busybox busybox:1.32.0 sh -c "while true; do date; sleep 1; done"
 ```
 
 > It will start a container in detached mode using `-d` flag.
