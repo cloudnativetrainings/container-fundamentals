@@ -114,7 +114,7 @@ docker ps
 - Re-attach to the container
 
 ```bash
-docker attach my-busybox
+docker attach --detach-keys="ctrl-p,ctrl-d" my-busybox
 ```
 
 - To stop it, press `Ctrl+c`. Verify the status of the container.
