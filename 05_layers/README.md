@@ -34,12 +34,6 @@ docker inspect debian:10.5
 docker inspect debian:10.5 | grep Cmd --after-context=10
 ```
 
-Or what user
-
-```bash
-docker inspect debian:10.5 | grep User --before-context=5
-```
-
 What is the SHA of the image.
 
 ```bash

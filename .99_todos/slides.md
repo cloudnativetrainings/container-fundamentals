@@ -36,3 +36,7 @@ https://docs.google.com/presentation/d/1NoTZFbm0R59J_vnun3M4l4N30lxtkqHsO4nGlduM
 
 /var/lib/docker/overlay2
 docker system info
+
+# labs and slides out of sync
+
+attach labs are not on the proper place in the slides
