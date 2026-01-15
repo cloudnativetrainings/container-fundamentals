@@ -32,10 +32,7 @@
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-      "enableNonRootDocker": "true",
-      "moby": "true"
-    }
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "remoteUser": "root",
   "privileged": true,
