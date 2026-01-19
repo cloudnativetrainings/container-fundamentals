@@ -55,3 +55,13 @@ docker run -it --rm --name entrypoint-vs-cmd entrypoint-vs-cmd:2.0.0 bonjour doc
 ```bash
 docker run -it --rm --name entrypoint-vs-cmd --entrypoint sleep entrypoint-vs-cmd:2.0.0 5
 ```
+
+## Cleanup
+
+```bash
+# Remove all the containers
+docker rm -f $(docker ps -qa)
+
+# Remove all the images
+docker rmi -f $(docker images -qa)
+```
