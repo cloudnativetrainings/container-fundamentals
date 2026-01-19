@@ -2,10 +2,10 @@
 
 In this training, we will make use of a linter for Dockerfiles.
 
-Navigate to the folder `14_linting` from CLI, before you get started.
+Navigate to the folder `18_linting` from CLI, before you get started.
 
 ```bash
-cd /training/14_linting
+cd /training/18_linting
 ```
 
 ## Verify Hadolint is installed properly

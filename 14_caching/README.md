@@ -2,10 +2,10 @@
 
 In this training, you will learn how to write Dockerfiles which will decrease build time due to using caches.
 
-Navigate to the folder `13_caching` from CLI, before you get started.
+Navigate to the folder `14_caching` from CLI, before you get started.
 
 ```bash
-cd /training/13_caching
+cd /training/14_caching
 ```
 
 ## Inspect the Dockerfile and the server.js file

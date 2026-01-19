@@ -2,10 +2,10 @@
 
 In this training, you will create your own image and run it afterwards.
 
-Navigate to the folder `06_dockerfile` from CLI, before you get started.
+Navigate to the folder `10_dockerfile` from CLI, before you get started.
 
 ```bash
-cd /training/06_dockerfile
+cd /training/10_dockerfile
 ```
 
 ## Inspect the Dockerfile

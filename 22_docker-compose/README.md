@@ -2,10 +2,10 @@
 
 In this training, we will install a minimal Prometheus stack via Docker Compose.
 
-Navigate to the folder `18_docker-compose` from CLI, before you get started.
+Navigate to the folder `22_docker-compose` from CLI, before you get started.
 
 ```bash
-cd /training/18_docker-compose
+cd /training/22_docker-compose
 ```
 
 ## Verify that docker compose is installed

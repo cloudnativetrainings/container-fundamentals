@@ -2,10 +2,10 @@
 
 In this training, you will learn the difference between exec and shell form concerning PID1.
 
-Navigate to the folder `11_shell-vs-exec-form-PID1` from CLI, before you get started.
+Navigate to the folder `17_shell-vs-exec-form-PID1` from CLI, before you get started.
 
 ```bash
-cd /training/11_shell-vs-exec-form-PID1
+cd /training/17_shell-vs-exec-form-PID1
 ```
 
 ## Inspect the Dockerfile
