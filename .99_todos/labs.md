@@ -33,3 +33,43 @@ CMD $FOO => SHELL form, $FOO gets substituted
 # add manual sigterm signal
 
 kill -s SIGTERM 34649 => for training-application
+
+# compose cadvisor issue
+
+```json
+# /etc/docker/daemon.json
+{
+  "metrics-addr": "0.0.0.0:9323",
+  "experimental": true
+}
+```
+
+doing this in devcontainer.json works
+
+```json
+  "mounts": [
+    {
+      "source": "dind-var-lib-docker",
+      "target": "/var/lib/docker",
+      "type": "volume"
+    }
+```
+
+but docker `localhost:9323/metrics` endpoint does not deliver any good metrics
+
+# lab 03
+
+detach keys on lab 03 funktioniert bei edge nicht
+
+# lab 17
+
+shell vs execform is not correct
+ENTRYPOINT ["/bin/sh", "-c", "exec ps aux"] <= this is correct
+
+# lab 16 and 17
+
+- order of things
+
+- use exec !!!
+
+# lab 19 entrypoint and cmd inconsistancy

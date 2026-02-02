@@ -2,6 +2,8 @@
 
 In this lab you will learn about foreground and detached containers.
 
+> Note that we are overwriting the CMD from the Dockerfile via `sh -c "while true; do date; sleep 1; done"`. This will be covered in a following training.
+
 ## Foreground Containers
 
 - Start a container which prints the current date every second on the console

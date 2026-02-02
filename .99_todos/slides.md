@@ -40,3 +40,11 @@ docker system info
 # labs and slides out of sync
 
 attach labs are not on the proper place in the slides
+
+# CMD vs entrypoint
+
+inconsistent through all slides
+
+## dockerignore visualization
+
+https://docs.google.com/presentation/d/1NoTZFbm0R59J_vnun3M4l4N30lxtkqHsO4nGlduMs2c/edit?slide=id.g3b8f2d0983b_0_6#slide=id.g3b8f2d0983b_0_6

@@ -2,8 +2,6 @@
 
 In this training, you will learn how to interact with a container.
 
-> Note that we are overwriting the CMD from the Dockerfile via `sh -c "while true; do date; sleep 1; done"`. This will be covered in a following training.
-
 ## Naming Containers
 
 > Note that when you do not provide `--name` parameter, the containers got some randomly generated names.
