@@ -1,11 +1,11 @@
 # Create a webserver image
 
-In this training, we will create an image with an customized webserver.
+In this training, we will create an image with a customized webserver.
 
-Navigate to the folder `12_dockerfile_webserver` from CLI, before you get started.
+Navigate to the folder `12_dockerfile-webserver` from CLI, before you get started.
 
 ```bash
-cd /training/12_dockerfile_webserver
+cd /training/12_dockerfile-webserver
 ```
 
 ## Inspect the Dockerfile
@@ -21,7 +21,7 @@ docker build -t my-webserver:1.0.0 .
 ```
 
 > The instruction `-t my-webserver:1.0.0` defines the name and the version of the resulting image.
-> The instrucition `.` tells the build process the location of the build context.
+> The instruction `.` tells the build process the location of the build context.
 
 ## Run a webserver container from the newly built image
 

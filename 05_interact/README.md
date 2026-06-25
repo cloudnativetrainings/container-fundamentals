@@ -4,7 +4,7 @@ In this training, you will learn how to interact with a container.
 
 ## Naming Containers
 
-> Note that when you do not provide `--name` parameter, the containers got some randomly generated names.
+> Note that when you do not provide a `--name` parameter, the containers get some randomly generated names.
 
 ```bash
 # start some containers

@@ -24,7 +24,7 @@ docker run -it go:1.0.0
 
 ## Make use of multistaged builds
 
-Now we will create the same application with a multistaged build. This will decrease the image size and will shrink the images attack vector.
+Now we will create the same application with a multistaged build. This will decrease the image size and will shrink the image's attack vector.
 
 Adapt the Dockerfile to the following
 

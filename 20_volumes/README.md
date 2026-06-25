@@ -20,7 +20,7 @@ docker build -t volumes:1.0.0 .
 
 ## RW layer
 
-The RW-layer allows the change to persist, until the container is not removed.
+The RW-layer allows the change to persist, as long as the container is not removed.
 Follow below steps to understand this behaviour.
 
 - Create the container
@@ -118,7 +118,7 @@ echo text from host >> ${VOLUME_DIR}/file.txt
 docker exec -it docker-managed-volume cat /data/file.txt
 ```
 
-> Note that your change is available made in previous step.
+> Note that your change made in the previous step is available.
 
 - Delete the container
 
@@ -150,7 +150,7 @@ cat ${VOLUME_DIR}/file.txt
 
 ## Bind mount volumes
 
-Bind mount volumes let you manage the lifecycle of your data youself.
+Bind mount volumes let you manage the lifecycle of your data yourself.
 
 - Create the container
 

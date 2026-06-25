@@ -18,7 +18,7 @@ docker pull debian:10.5
 docker history debian:10.5
 ```
 
-> shows you list of layers that `debian` image contains.
+> shows you a list of layers that the `debian` image contains.
 
 ## Inspect an image via docker inspect
 
@@ -28,13 +28,13 @@ docker history debian:10.5
 docker inspect debian:10.5
 ```
 
-- There you will also see how the image is build and e.g. which command will executed at the container startup.
+- There you will also see how the image is built and e.g. which command will be executed at the container startup.
 
 ```bash
 docker inspect debian:10.5 | grep Cmd --after-context=10
 ```
 
-What is the SHA of the image.
+What is the SHA of the image?
 
 ```bash
 docker inspect debian:10.5 | grep Id

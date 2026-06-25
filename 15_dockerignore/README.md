@@ -26,7 +26,7 @@ docker build -t ignore:1.0.0 .
 docker run -it ignore:1.0.0
 ```
 
-> Take a look of the output of the container. All files are in the resulting container.
+> Take a look at the output of the container. All files are in the resulting container.
 
 ## Exclude files from the build
 

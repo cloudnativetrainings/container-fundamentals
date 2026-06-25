@@ -30,7 +30,7 @@ docker restart my-nginx
 
 ### Kill a container
 
-If you have e.g. an hanging container, it's possible to send the `SIGKILL` signal directly. Try
+If you have e.g. a hanging container, it's possible to send the `SIGKILL` signal directly. Try
 
 ```bash
 docker kill my-nginx

@@ -1,6 +1,6 @@
 # Networking
 
-In this training, you will learn how to make use of docker networks
+In this training, you will learn how to make use of docker networks.
 
 ## List all networks
 
@@ -58,7 +58,7 @@ docker network ls
 docker run -it -d --net my-network --name webserver nginx:1.19.2
 ```
 
-- Verify that the ip of the container is contained by the subnet
+- Verify that the IP of the container is contained in the subnet
 
 ```bash
 docker inspect webserver | grep IPAddress

@@ -1,4 +1,4 @@
-# Exec vs Sell form - PID1
+# Exec vs Shell form - PID1
 
 In this training, you will learn the difference between exec and shell form concerning PID1.
 

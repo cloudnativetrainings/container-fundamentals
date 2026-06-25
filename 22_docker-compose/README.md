@@ -76,7 +76,7 @@ Create a Datasource of type `Prometheus` and the URL `http://prometheus:9090`
 
 ## Import a Dashboard
 
-Import the Dashboard with id `193`. Set the Datasource to the previously generated.
+Import the Dashboard with id `193`. Set the Datasource to the previously generated one.
 
 ## Cleanup
 
