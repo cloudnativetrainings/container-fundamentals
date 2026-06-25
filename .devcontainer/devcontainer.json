@@ -26,7 +26,9 @@
           ".gitignore": true,
           ".devcontainer/": true,
           ".99_todos/": true,
-          "makefile": true
+          "makefile": true,
+          ".claude/": true,
+          "CLAUDE.md": true
         }
       }
     }
