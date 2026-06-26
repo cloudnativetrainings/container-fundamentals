@@ -10,7 +10,7 @@ cd /training/22_docker-compose
 
 ## Verify that docker compose is installed
 
-> We have installed it during `00_setup` lab.
+> Docker Compose comes pre-installed in your training environment.
 
 Verify the installation
 
