@@ -40,7 +40,7 @@
   "privileged": true,
   "runArgs": [
     "--network=host",
-    "--cgroupns=host"
+    "--init"
   ],
   "forwardPorts": [
     80,
