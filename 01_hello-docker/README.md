@@ -1,6 +1,6 @@
 # Hello Docker
 
-In this training, you will start a Linux OS container and install a web server into it.
+In this lab, you will start a Linux OS container and install a web server into it.
 
 ## Verify no web server is running on your VM
 
@@ -10,7 +10,7 @@ Visit on port 80:
 curl http://localhost
 ```
 
-If you want to reach it via browser, you can get the URL of your Codespaces instance via below command:
+If you want to reach it via browser, you can get the URL of your Codespaces instance via the command below:
 
 ```bash
 echo "https://${CODESPACE_NAME}-80.app.github.dev/"

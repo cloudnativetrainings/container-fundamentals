@@ -1,6 +1,6 @@
 # Container Lifecycle
 
-In this training, you will learn about the lifecycle of a container.
+In this lab, you will learn about the lifecycle of a container.
 
 ## The Difference between stop/kill/rm
 

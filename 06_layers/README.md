@@ -1,5 +1,7 @@
 # Layers
 
+In this lab, you will explore how Docker images are made up of layers and how to inspect them.
+
 ## Layers in docker image
 
 Each Docker image references a list of read-only layers that represent filesystem differences.

@@ -1,8 +1,8 @@
 # Multistaged builds
 
-In this training, you will learn how to build your applications.
+In this lab, you will learn how to build your applications.
 
-Navigate to the folder `13_multistaged-builds` from CLI, before you get started.
+Navigate to the folder `13_multistaged-builds` from the CLI before you get started.
 
 ```bash
 cd /training/13_multistaged-builds
@@ -24,7 +24,7 @@ docker run -it go:1.0.0
 
 ## Make use of multistaged builds
 
-Now we will create the same application with a multistaged build. This will decrease the image size and will shrink the image's attack vector.
+Now we will create the same application with a multistaged build. This will decrease the image size and will shrink the image's attack surface.
 
 Adapt the Dockerfile to the following
 

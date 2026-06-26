@@ -1,8 +1,8 @@
 # Exec vs Shell form - PID1
 
-In this training, you will learn the difference between exec and shell form concerning PID1.
+In this lab, you will learn the difference between exec and shell form concerning PID1.
 
-Navigate to the folder `17_shell-vs-exec-form-PID1` from CLI, before you get started.
+Navigate to the folder `17_shell-vs-exec-form-PID1` from the CLI before you get started.
 
 ```bash
 cd /training/17_shell-vs-exec-form-PID1
@@ -36,7 +36,7 @@ docker run -it shell-vs-exec-form-pid1:1.0.0
 ENTRYPOINT ps aux
 ```
 
-> This is shell form of `ENTRYPOINT`
+> This is the shell form of `ENTRYPOINT`
 
 ## Rebuild the image
 

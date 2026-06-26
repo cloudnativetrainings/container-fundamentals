@@ -1,8 +1,8 @@
 # Caching
 
-In this training, you will learn how to write Dockerfiles which will decrease build time due to using caches.
+In this lab, you will learn how to write Dockerfiles which will decrease build time due to using caches.
 
-Navigate to the folder `14_caching` from CLI, before you get started.
+Navigate to the folder `14_caching` from the CLI before you get started.
 
 ```bash
 cd /training/14_caching
@@ -22,7 +22,7 @@ docker build -t webserver:1.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:1.0.0
 ```
 
-> Visit the site via the external IP of your VM on port 80 via http
+> Visit the site via the external IP of your VM on port 80 over HTTP
 
 ### Remove the container
 
@@ -47,7 +47,7 @@ docker build -t webserver:1.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:1.0.0
 ```
 
-> Visit the site via the external IP of your VM on port 80 via http
+> Visit the site via the external IP of your VM on port 80 over HTTP
 > Note that all layers starting from the `RUN npm install` layer are not taken from the cache. On bigger projects, this can increase your build times significantly.
 
 ### Remove the container
@@ -85,7 +85,7 @@ docker build -t webserver:2.0.0 .
 docker run -it -d --rm --name my-webserver -p 80:80 webserver:2.0.0
 ```
 
-> Visit the site via the external IP of your VM on port 80 via http
+> Visit the site via the external IP of your VM on port 80 over HTTP
 > Note the layers which are taken from the cache.
 
 ## Cleanup

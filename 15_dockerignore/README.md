@@ -1,8 +1,8 @@
 # Build Ignore
 
-In this training, you will learn how to exclude files from the resulting image.
+In this lab, you will learn how to exclude files from the resulting image.
 
-Navigate to the folder `15_dockerignore` from CLI, before you get started.
+Navigate to the folder `15_dockerignore` from the CLI before you get started.
 
 ```bash
 cd /training/15_dockerignore

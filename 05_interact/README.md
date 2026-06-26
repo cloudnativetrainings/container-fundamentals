@@ -1,6 +1,6 @@
 # Interacting
 
-In this training, you will learn how to interact with a container.
+In this lab, you will learn how to interact with a container.
 
 ## Naming Containers
 

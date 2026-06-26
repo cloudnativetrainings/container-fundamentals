@@ -1,8 +1,8 @@
 # Exec vs Shell form - variable substitution
 
-In this training, you will learn the difference between exec and shell form concerning variable substitution.
+In this lab, you will learn the difference between exec and shell form concerning variable substitution.
 
-Navigate to the folder `16_shell-vs-exec-form-variable-substitution` from CLI, before you get started.
+Navigate to the folder `16_shell-vs-exec-form-variable-substitution` from the CLI before you get started.
 
 ```bash
 cd /training/16_shell-vs-exec-form-variable-substitution
@@ -36,7 +36,7 @@ docker run -it shell-vs-exec-form-vars:1.0.0
 ENTRYPOINT /bin/echo $FOO
 ```
 
-> This is shell form of `ENTRYPOINT`
+> This is the shell form of `ENTRYPOINT`
 
 ## Rebuild the image
 

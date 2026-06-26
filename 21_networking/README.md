@@ -1,6 +1,6 @@
 # Networking
 
-In this training, you will learn how to make use of docker networks.
+In this lab, you will learn how to make use of docker networks.
 
 ## List all networks
 

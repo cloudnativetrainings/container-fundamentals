@@ -1,8 +1,8 @@
 # Docker Compose
 
-In this training, we will install a minimal Prometheus stack via Docker Compose.
+In this lab, we will install a minimal Prometheus stack via Docker Compose.
 
-Navigate to the folder `22_docker-compose` from CLI, before you get started.
+Navigate to the folder `22_docker-compose` from the CLI before you get started.
 
 ```bash
 cd /training/22_docker-compose
@@ -56,7 +56,7 @@ docker ps
 docker compose ps
 ```
 
-- Verify the exposed metrics of CAdvisor. Note that there are a lot of metrics.
+- Verify the exposed metrics of cAdvisor. Note that there are a lot of metrics.
 
 ```bash
 curl localhost:8080/metrics
@@ -64,7 +64,7 @@ curl localhost:8080/metrics
 
 - Visit Grafana in your Browser (User admin, Password admin) on port 80 via http.
 
-> You can get the URL of your Codespaces instance via below command:
+> You can get the URL of your Codespaces instance via the command below:
 
 ```bash
 echo "https://${CODESPACE_NAME}-80.app.github.dev/"

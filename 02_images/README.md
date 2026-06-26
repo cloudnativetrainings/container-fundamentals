@@ -1,10 +1,10 @@
 # Images
 
-In this training, you will learn how to manage images.
+In this lab, you will learn how to manage images.
 
 ## Search for an image
 
-- Check if image is available or not on Docker Hub (default registry for docker images).
+- Check if an image is available or not on Docker Hub (default registry for docker images).
 
 ```bash
 docker search nginx
@@ -12,7 +12,7 @@ docker search nginx
 
 ## Download an image
 
-- You can pull an image from Docker Hub using below pull command, which can be used for container creation afterwards. Adjust the image tag to download required version.
+- You can pull an image from Docker Hub using the pull command below, which can be used for container creation afterwards. Adjust the image tag to download the required version.
 
 ```bash
 docker pull nginx:1.23.1
@@ -20,7 +20,7 @@ docker pull nginx:1.23.1
 
 ## List local docker images
 
-- To verify images is available locally, use following command
+- To verify the image is available locally, use the following command
 
 ```bash
 docker images

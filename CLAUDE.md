@@ -20,7 +20,7 @@ There is no build or test suite — the labs are executed by hand by trainees. T
 Match these patterns when adding or editing labs — they are consistent across the repo:
 
 - **Numbering groups topics with intentional gaps**: `01`–`06` container basics, `10`–`18` Dockerfile/image-build topics, `20`–`23` runtime (volumes, networking, compose, privileged). Leave gaps for future labs rather than renumbering.
-- **README shape**: `# Title`, then a one-line `In this training, you will…` intro. Labs that ship files start with a navigate step using an **absolute `/training/...` path** (e.g. `` cd /training/14_caching ``). Steps are `## Imperative headings` with fenced ` ```bash ` blocks; explanatory asides use `>` blockquotes.
+- **README shape**: `# Title`, then a one-line `In this lab, you will…` intro. Labs that ship files start with a navigate step using an **absolute `/training/...` path** (e.g. `` cd /training/14_caching ``). Steps are `## Imperative headings` with fenced ` ```bash ` blocks; explanatory asides use `>` blockquotes.
 - **Cleanup**: most labs end with a `## Cleanup` section, typically `docker rm -f $(docker ps -qa)` and `docker rmi -f $(docker images -qa)`.
 - **Codespaces URL** is surfaced to trainees via `echo "https://${CODESPACE_NAME}-80.app.github.dev/"`.
 - **`.solution/` subdirectories** (hidden) hold the corrected/finished artifact for a lab — e.g. `18_linting/.solution/Dockerfile` is the clean version of the intentionally-flawed `18_linting/Dockerfile`.
