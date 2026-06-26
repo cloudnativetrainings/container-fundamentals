@@ -59,7 +59,11 @@ docker compose ps
 - Verify the exposed metrics of cAdvisor. Note that there are a lot of metrics.
 
 ```bash
-curl localhost:8080/metrics
+# verify the cAdvisor endpoint
+echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
+
+# verify the prometheus endpoint
+echo "https://${CODESPACE_NAME}-9090.app.github.dev/"
 ```
 
 - Visit Grafana in your Browser (User admin, Password admin) on port 80 via http.
